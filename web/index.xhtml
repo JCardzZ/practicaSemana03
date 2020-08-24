@@ -1,0 +1,93 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
+    <h:head>
+        <title>Facelet Title</title>
+        <link href="Recursos/css/master.css" rel="stylesheet" type="text/css"/>
+
+        <!-- CSS only -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous"/>
+
+    </h:head>
+    <h:body>
+        <body>
+            <div class="login-box">
+                <img src="Recursos/img/logo.png" class="avatar" alt="Avatar Image"></img>
+                <div class ="container">
+                    <div class="row mt-3">
+
+                        <from action="">
+                            <div class="form-group">
+                                <label for="">Nombre:</label>
+                                <input type="text" placeholder="Nombre" id="Nombre"></input>
+                                <label for="">Apellidos:</label>
+                                <input type="text" placeholder="Apellidos" id="Apellidos"></input>
+                            </div>
+                            <p>   
+
+                                <label for="">Edad:</label>
+                                <input type="text" placeholder="Edad " id="Edad"></input>
+
+                                <label for="">Profesión:</label>
+                                <input type="text" placeholder="Profesión" id="Profesión"></input>
+                            </p>
+
+                            <div>
+
+                                <button type="button" class="btn btn-success">Guardar</button>
+
+                                <button type="button" class="btn btn-primary">Actualizar</button>
+
+                                <div>
+
+
+
+                                </div>
+
+                            </div> 
+
+                        </from>
+                    </div>
+                </div>
+            </div>
+
+            <p>
+
+
+
+            </p>
+
+
+
+            <div class="login-box2">
+                <table cellspacing="0" cellpadding="0" id="mi-tabla" class="table table-striped table-dark" >
+                    <thead>
+                        <tr>
+                             <th><span>ID</span></th>
+                            <th><span>Nombre</span></th>
+                            <th><span>Apellidos</span></th>
+                            <th><span>Edad</span></th>
+                            <th><span>Profesión</span></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>#{estudianteManageBean.personaModel.id}</td>
+                            <td>#{estudianteManageBean.personaModel.nombre}</td>
+                            <td>#{estudianteManageBean.personaModel.apellido}</td>
+                            <td>#{estudianteManageBean.personaModel.edad}</td>
+                            <td>#{estudianteManageBean.personaModel.carrera}</td>
+                        </tr>
+                             
+                    </tbody>
+                </table>
+                <div>
+                    <button type="button" class="btn btn-danger">Eliminar</button>
+                </div> 
+            </div>
+
+        </body>
+    </h:body>
+</html>
+
